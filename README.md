@@ -20,8 +20,8 @@ Currently, PinMan is run as a command-line interface (CLI) from a terminal windo
 
 Learn more by reading about the general concepts and terminology of PinMan:
 
-{% content-ref url="concepts.md" %}
-[concepts.md](concepts.md)
+{% content-ref url="core-concepts.md" %}
+[core-concepts.md](core-concepts.md)
 {% endcontent-ref %}
 
 ## Want to jump right in?

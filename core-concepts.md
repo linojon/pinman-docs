@@ -1,8 +1,8 @@
 ---
-description: Basic concepts and terminology
+description: Overview of the basic design and terminology of PinMan
 ---
 
-# Concepts
+# Core Concepts
 
 Virtual pinball software, as awesome as it is, is actually an assembly of multiple separate software projects cobbled together over many years. One flaw of this ad hoc architecture, in my opinion, is that your data files (pinball tables, table-specific configurations, media, etc.) reside in the same directories as the code that runs them. _Imagine you had to keep all your Word docs in the same folder as the Microsoft Office installation files?_ PinMan is an attempt to solve this problem by letting you maintain a collection of pinball games separate from the machine and software that runs them.
 

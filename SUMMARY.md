@@ -2,7 +2,7 @@
 
 * [PinMan](README.md)
 * [Quick Start](quick-start.md)
-* [Concepts](concepts.md)
+* [Core Concepts](core-concepts.md)
 
 ## Reference
 
