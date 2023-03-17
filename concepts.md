@@ -21,7 +21,7 @@ Likewise, you will continue to use the existing vpin tools to configure your set
 ### Definitions
 
 * MACHINE - a virtual pinball system where you play the game tables. Can be a pincab or desktop. Identified by a unique name and a root folder or network identifier.
-* SOFTWARE - a software project installed on a Machine.&#x20;
+* SOFTWARE - a software project required to play a pinball table.&#x20;
 
 ### Features
 
