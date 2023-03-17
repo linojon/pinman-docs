@@ -18,6 +18,12 @@ Using PinMan, you can more easily manage all your virtual pinball tables, mainta
 
 Currently, PinMan is run as a command-line interface (CLI) from a terminal window. A desktop graphical interface (GUI) is planned.
 
+Learn more by reading about the general concepts and terminology of PinMan:
+
+{% content-ref url="concepts.md" %}
+[concepts.md](concepts.md)
+{% endcontent-ref %}
+
 ## Want to jump right in?
 
 Feeling like an eager beaver? Jump in to the quick start docs and get making your first request:

@@ -25,3 +25,8 @@
 * [Usage Scenarios](user-guides/usage-scenarios.md)
 * [Collection Folder Organization](user-guides/collection-folder-organization.md)
 * [Troubleshooting](user-guides/troubleshooting.md)
+
+## Licensing
+
+* [Community version](licensing/community-version.md)
+* [Premium version](licensing/premium-version.md)
