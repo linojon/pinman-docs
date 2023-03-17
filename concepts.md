@@ -6,6 +6,8 @@ description: Basic concepts and terminology
 
 Virtual pinball software, as awesome as it is, is actually an assembly of multiple separate software projects cobbled together over many years. One flaw of this ad hoc architecture, in my opinion, is that your data files (pinball tables, table-specific configurations, media, etc.) reside in the same directories as the code that runs them. _Imagine you had to keep all your Word docs in the same folder as the Microsoft Office installation files?_ PinMan is an attempt to solve this problem by letting you maintain a collection of pinball games separate from the machine and software that runs them.
 
+### Architecture
+
 The following diagram illustrates the architecture of PinMan:
 
 <figure><img src=".gitbook/assets/objects-diagram.png" alt=""><figcaption><p>Architecture of the PinMan software</p></figcaption></figure>
@@ -14,7 +16,18 @@ With PinMan, you have a Machine where your various virtual pinball Software is i
 
 As usual, to run and play a table all the Game files must be installed on the Machine, distributed into the specific Software directories and data stores as needed. But now, with PinMan, you can more easily automate this process. All the stuff associated with a specific table is kept in one place, its Game folder. Those can then be Installed onto the Machine Software with a single command.
 
-Likewise you will continue to use the existing vpin tools to configure your setup, including screen layouts, PinUP media, game settings, and so on. Then, with PinMan you can use a single command to Collect all the files and settings that may have changed for a table back into the Collection Game folder.
+Likewise, you will continue to use the existing vpin tools to configure your setup, including screen layouts, PinUP media, game settings, and so on. Then, with PinMan you can use a single command to Collect all the files and settings that may have changed for a given table back into its Collection Game folder.
+
+### Definitions
+
+* MACHINE - a virtual pinball system where you play the game tables. Can be a pincab or desktop. Identified by a unique name and a root folder or network identifier.
+* SOFTWARE - a software project installed on a Machine.&#x20;
+
+### Features
+
+PinMan is designed to be extremely flexible and customizable for your specific configurations. Almost everything about the tools is data-driven, controlled through a configuration file (pinman.config.yaml) that you can change to meet your needs and adapt to future changes, including software updates and new projects you add to your machine.
+
+
 
 
 
