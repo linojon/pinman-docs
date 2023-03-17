@@ -1,6 +1,6 @@
 # Table of contents
 
-* [PinMan - Virtual Pinball File Manager](README.md)
+* [PinMan](README.md)
 * [Quick Start](quick-start.md)
 * [Concepts](concepts.md)
 
