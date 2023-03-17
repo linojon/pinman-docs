@@ -14,7 +14,7 @@ PinMan is designed to be extremely flexible and customizable for your specific c
 
 The following diagram illustrates the architecture of PinMan:
 
-<figure><img src=".gitbook/assets/objects-diagram.png" alt=""><figcaption><p>Architecture of the PinMan software</p></figcaption></figure>
+<figure><img src=".gitbook/assets/objects-diagram 2.png" alt=""><figcaption><p>Architecture of the PinMan software</p></figcaption></figure>
 
 With PinMan, you have a Machine where your various virtual pinball Software is installed. And you have a Collection of Game folders, each containing the files and data (Items) for a specific version of a pinball table.&#x20;
 
