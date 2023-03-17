@@ -20,8 +20,17 @@ Likewise, you will continue to use the existing vpin tools to configure your set
 
 ### Definitions
 
-* MACHINE - a virtual pinball system where you play the game tables. Can be a pincab or desktop. Identified by a unique name and a root folder or network identifier.
-* SOFTWARE - a software project required to play a pinball table.&#x20;
+The following objects are configured and managed by PinMan, making it extremely flexible and adaptable for managing virutla pinball data. Please refer to the preceding "Architecture" diagram.
+
+* MACHINE - a virtual pinball system where you play your game tables. Can be a physical pinball cabinet, or a Windows desktop. Machines are identified by a unique name and a root folder or network identifier. A Machine is configured with a list of its installed software. PinMan allows you to manage more than one Machine for your Collection.
+* SOFTWARE - a software project used on a virtual pinball machine and required to play a pinball table. A machine will have multiple software installed. We're only concerned with software that has table-specific data. Each software project is configured with a list of item types it manages.
+* ITEM TYPE - a table-specific data item managed by Software on a Machine. The are many different item types, including files, ini data, xml data, registry data, SQLite database records, whole directories and more. Parameters of each ItemType are defined in the config file.
+* CONFIG FILE - the config file defines the Machines, Runners, Software, and ItemTypes managed by PinMan, and other settings. A default config file comes built-in to PinMan that covers many common virtual pinball installations (including one using BallerInstaller). As a YAML format text file, it is easily edited and updated to suit your needs.
+* RUNNER - a list of Software required by a game table to run on a machine. For example, you may have a Runner named "VPX-EM" that includes Visual Pinball, PinUPSystem, and PinballY, and a separate Runner "VPX-SS" that adds VpinMAME for ROM-based VPX tables.
+* COLLECTION - a directory containing your Game folders.&#x20;
+* GAME - a sub-directory under a Collection that contains the files and other data Items required to configure and play a game. Each Game folder must contain a Manifest file that identifies the Items for the paritcular game.
+* ITEM -&#x20;
+* MANIFEST FILE -
 
 ### Features
 
