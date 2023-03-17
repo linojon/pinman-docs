@@ -6,6 +6,10 @@ description: Basic concepts and terminology
 
 Virtual pinball software, as awesome as it is, is actually an assembly of multiple separate software projects cobbled together over many years. One flaw of this ad hoc architecture, in my opinion, is that your data files (pinball tables, table-specific configurations, media, etc.) reside in the same directories as the code that runs them. _Imagine you had to keep all your Word docs in the same folder as the Microsoft Office installation files?_ PinMan is an attempt to solve this problem by letting you maintain a collection of pinball games separate from the machine and software that runs them.
 
+### Features
+
+PinMan is designed to be extremely flexible and customizable for your specific configurations. Almost everything about the tools is data-driven, controlled through a configuration file (pinman.config.yaml) that you can change to meet your needs and adapt to future changes, including software updates and new projects you add to your machine.
+
 ### Architecture
 
 The following diagram illustrates the architecture of PinMan:
@@ -31,10 +35,6 @@ The following objects are configured and managed by PinMan, making it extremely 
 * GAME - a sub-directory under a Collection that contains the files and other data Items required to configure and play a game. Each Game folder must contain a Manifest file that identifies the Items for the paritcular game.
 * ITEM - a piece of data required by vpin Software for a specific table. For VisualPinball, Items include the .vpx and maybe .directb2s and rom.zip files. PinMan can also collect and install table-specific data, for instance, from the DmdDevice.ini, B2STableSettings.xml, and PUPDatabase.db files saved in the Game folder.&#x20;
 * MANIFEST FILE - each Game folder has a Manifest file that defines properties of the game needed to Collect from and Install to a machine. It is a YAML-format text file named game.manifest.yaml. The Manifest defines which Runner the game uses, the Base file name (e.g. "Twilight Zone (Bally 1993)"), and other files and data Items that are part of the game (e.g the ROM name " tz\_94ch"). PinMan provides tools to help automate building and updating the Manifest file, although it can also be edited directly with a text editor.&#x20;
-
-### Features
-
-PinMan is designed to be extremely flexible and customizable for your specific configurations. Almost everything about the tools is data-driven, controlled through a configuration file (pinman.config.yaml) that you can change to meet your needs and adapt to future changes, including software updates and new projects you add to your machine.
 
 
 
