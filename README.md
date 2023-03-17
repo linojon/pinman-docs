@@ -1,8 +1,4 @@
----
-description: Virtual Pinball File Manager
----
-
-# PinMan Documentation
+# PinMan - Virtual Pinball File Manager
 
 PinMan lets you maintain your collection of pinball games separate from the software that runs them.
 
