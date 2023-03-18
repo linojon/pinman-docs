@@ -10,11 +10,21 @@ Virtual pinball software, as awesome as it is, is actually an assembly of multip
 
 With PinMan, you have a Machine where your various virtual pinball Software is installed. And you have a Collection of Game folders, each containing the files and data (Items) for a specific version of a pinball table.&#x20;
 
-As usual, to run and play a table, all the Game files must be installed on the Machine, distributed into the specific Software directories and data stores as needed. But now, with PinMan, you can more easily automate this process. All the stuff associated with a specific table is kept in one place, its Game folder. Those can then be Installed onto the Machine Software with a single command.
+As usual, to run and play a pinball table, all the Game files must be installed on the Machine, distributed into the specific Software directories and data stores as needed. But now, with PinMan, you can more easily automate this process. All the stuff associated with a specific table is kept in one place, its Game folder. Those can then be Installed onto the Machine with a single command.
 
-Likewise, you will continue to use the existing vpin tools to configure your setup, including screen layouts, PinUP media, game settings, and so on. Then, with PinMan you can use a single command to Collect all the files and settings that may have changed for a given table back into its Collection Game folder.
+Likewise, you will continue to use your existing virtual pinball software tools to configure your games, including screen layouts, PinUP media, game settings, and so on. Then, with PinMan you can use a single command to Collect everything that may have changed for a given table, saving it back into its Game folder.
 
 <figure><img src=".gitbook/assets/collect-install.png" alt=""><figcaption><p>PinMan Collect and Install Commands</p></figcaption></figure>
+
+To learn more about the Collect and Install commands, and many other features, see the CLI Reference pages and User Guides
+
+{% content-ref url="reference/cli-reference/" %}
+[cli-reference](reference/cli-reference/)
+{% endcontent-ref %}
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
 
 ### Problems and Solutions
 
@@ -54,8 +64,3 @@ On the right is a Collection of Games. Each Game folder contains the files and d
 * MANIFEST FILE - each Game folder has a Manifest file that defines properties of the game needed to Collect from and Install to a Machine. It is a YAML-format text file named game.manifest.yaml. The Manifest defines which Runner the game uses, the Base file name (e.g. "Twilight Zone (Bally 1993)"), and other files and data Items that are part of the game (e.g the ROM name " tz\_94ch"). PinMan provides tools to help automate building and updating the Manifest file, although it can also be edited directly with a text editor.&#x20;
 
 This architecture help make PinMan extremely flexible and adaptable for managing your virtual pinball data.&#x20;
-
-
-
-
-
