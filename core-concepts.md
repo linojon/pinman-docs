@@ -22,7 +22,7 @@ Below is an example file folder structure of some game files installed on a mach
 
 &#x20;
 
-To learn more about the Collect and Install commands, and many other features, see the [CLI Reference](reference/cli-reference/) pages and [User Guides](broken-reference).
+To learn more about the Collect and Install commands, and many other features, see the [User Guides](broken-reference) and the [CLI Reference](reference/cli-reference/) pages.
 
 ## Problems and Solutions
 
@@ -39,15 +39,15 @@ Some of the problems and complexity of virtual pinball systems that PinMan hopes
 
 ## Architecture
 
-PinMan is designed to be extremely flexible and customizable for your specific configurations. Almost everything about the tool is data-driven, controlled through a configuration file (pinman.config.yaml) that you can change to meet your needs and adapt to future changes to pinball software, machine setup, and new types of games you add to your machine.
+PinMan is designed to be extremely flexible and customizable for your specific configurations. Almost everything about the tool is data-driven, controlled through a configuration file that you can change to meet your needs and adapt to future changes to pinball software, machine setup, and new types of games you add to your machine.
 
 The following diagram illustrates the organization of PinMan. (Thick arrows indicate one-to-many, thin arrows for one-to-one).&#x20;
 
 <figure><img src=".gitbook/assets/objects-diagram 3.png" alt=""><figcaption><p>Architecture of the PinMan software</p></figcaption></figure>
 
-The Config file describes your setup, including the Machine(s) and Software you have. It also defines one or more Runners that lists the Software needed to run a Game.&#x20;
+The Config file (_pinman.config.yaml_) describes your setup, including the Machine(s) and Software you have. It also defines one or more Runners that lists the Software needed to run a Game.&#x20;
 
-On the left is a virtual pinball Machine, which has multiple Software projects installed. Each Software manages multiple Item Types (e.g. files and data). For example, Visual Pinball is a software (maybe installed at _C:\vPinball\VisualPinball)_, with ItemTypes that include a VPX file, and optionally a DirectB2S file and ROM .zip file.
+On the left is a virtual pinball Machine, which has multiple Software projects installed. Each Software manages multiple Item Types (e.g. files and data). For example, Visual Pinball software, may be installed at _C:\vPinball\VisualPinball_, has Item Types including a VPX file, and optionally a DirectB2S file and ROM .zip file.
 
 On the right is a Collection of Games. Each Game folder contains the specific files and data Items for the game. For example, its Items may include the "Twilight Zone (Bally 1993).vpx" and "tz\_94ch.zip" ROM files. A Game also has a Manifest file that includes the name of the Runner it uses.&#x20;
 
