@@ -19,17 +19,18 @@
   * [Import](reference/cli-reference/import.md)
 * [PinMan Config File](reference/pinman-config-file.md)
 * [Game Manifest File](reference/game-manifest-file.md)
+* [Error Messages](reference/error-messages.md)
 
 ## User Guides
 
-* [Usage Scenarios](user-guides/usage-scenarios/README.md)
-  * [Table download and install](user-guides/usage-scenarios/table-download-and-install.md)
-  * [Backup a table](user-guides/usage-scenarios/backup-a-table.md)
-  * [Multiple machines](user-guides/usage-scenarios/multiple-machines.md)
-  * [Table maintenance](user-guides/usage-scenarios/table-maintenance.md)
-  * [Table versions](user-guides/usage-scenarios/table-versions.md)
-  * [Table variants](user-guides/usage-scenarios/table-variants.md)
-* [Game Folders](user-guides/game-folders.md)
+* [Usage Scenarios](user-guides/usage-scenarios.md)
+  * [First time download and install a VPX table and Popper media](user-guides/usage-scenarios/first-time-download-and-install-a-vpx-table-and-popper-media.md)
+  * [Backup a VPX table and associated files](user-guides/usage-scenarios/backup-a-vpx-table-and-associated-files.md)
+  * [Manage a collection of tables for multiple cabinets](user-guides/usage-scenarios/manage-a-collection-of-tables-for-multiple-cabinets.md)
+  * [Maintaining the health of your collection](user-guides/usage-scenarios/maintaining-the-health-of-your-collection.md)
+  * [Upgrading a table to a new version](user-guides/usage-scenarios/upgrading-a-table-to-a-new-version.md)
+  * [Switching between game and media configurations](user-guides/usage-scenarios/switching-between-game-and-media-configurations.md)
+* [Game Folders](user-guides/collection-folder-organization.md)
 * [Troubleshooting](user-guides/troubleshooting.md)
 
 ## Licensing
