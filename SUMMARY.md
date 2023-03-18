@@ -28,5 +28,5 @@
 
 ## Licensing
 
-* [Community version](licensing/community-version.md)
-* [Premium version](licensing/premium-version.md)
+* [Open-source License](licensing/open-source-license.md)
+* [Paid License](licensing/paid-license.md)
