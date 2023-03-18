@@ -8,11 +8,11 @@ Virtual pinball software, as awesome as it is, is actually an assembly of multip
 
 ## Key Features: Collect and Install
 
-With PinMan, you have a Machine where your various virtual pinball Software is installed. And you have a Collection of Game folders, each containing the files and data (Items) for a specific version of a pinball table.&#x20;
+With PinMan, you have a Machine where your various virtual pinball Software is installed. And you have a Collection of Games, organized as folders each containing the files and data for a specific version of a virtual pinball table.&#x20;
 
-As usual, to run and play a pinball table, all the Game files must be installed on the Machine, distributed into the specific Software directories and data stores as needed. But now, with PinMan, you can more easily automate this process. All the stuff associated with a specific table is kept in one place, its Game folder. Those can then be Installed onto the Machine with a single command.
+As usual, to run and play a pinball table, all the Game files must be installed on the Machine, distributed into the specific Software directories and data stores as needed. But now, with PinMan, you can more easily automate this process. A master copy of all the stuff associated with a specific table is kept in one place, its Game folder. You can then **Install** those onto a Machine with a single command.
 
-Likewise, you will continue to use your existing virtual pinball software tools to configure your games, including screen layouts, PinUP media, game settings, and so on. Then, with PinMan you can use a single command to Collect everything that may have changed for a given table, saving it back into its Game folder.
+Likewise, you will continue to use your existing virtual pinball software tools to setup and run your games, including screen layouts, PinUP media, game settings, and so on. Then, with PinMan you can use a single command to **Collect** everything that may have changed for a given table, saving it back into its Game folder.
 
 <figure><img src=".gitbook/assets/collect-install.png" alt=""><figcaption><p>PinMan Collect and Install Commands</p></figcaption></figure>
 
