@@ -6,6 +6,19 @@ description: Overview of the basic design and terminology of PinMan
 
 Virtual pinball software, as awesome as it is, is actually an assembly of multiple separate software projects cobbled together over many years. One flaw of this ad hoc architecture, in my opinion, is that your data files (pinball tables, table-specific configurations, media, etc.) reside in the same directories as the code that runs them. _Imagine you had to keep all your Word docs in the same folder as the Microsoft Office installation files?_ PinMan is an attempt to solve this problem by letting you maintain a collection of pinball games separate from the machine and software that runs them.
 
+### Problems and Solutions
+
+Some of the problems and complexity of virtual pinball systems that PinMan hopes to address include:
+
+* &#x20;It is common practice to keep application software and user data separate for better organization and accessibility. Virtual pinball generally violates this principle by requiring your game files live in the same directories as the installed software. With PinMan, your games are stored in folders separate from the virtual pinball software.
+* In virtual pinball, there are many downloads and files per game table, with lots of variation in file types, names, purposes, packaging (e.g. zip. rar), and versions. Keeping track and managing all the files associated with a specific game is difficult. With PinMan, you can first add all the download files for a game in a single Game folder, and then install them to a Machine in one step.&#x20;
+* There are various pinball emulators, media players and other associated software, each with complex setups and unique folder structures that you need to remember and properly care for. With PinMan, your software setup is defined a Config file, that is used to install your games automatically.&#x20;
+* Installing new games can be tedious and error prone. Yet the process is basically the same and repetitive for each game. PinMan knows which files go where, and new games can be installed with a single command. &#x20;
+* Existing setups tend to be "brittle", that is, subject to unexpected breakage and problems. PinMan&#x20;
+* Rebuilding a virtual pinball machine after a disk crash or major upgrade requires having a full system backup, not all data may have been preserved (e.g Windows registry), and more likely requires hours of restoration work. Also, it is nearly impossible to partially restore some but not all games to a machine.
+* Installing the same games to multiple machines requires setting up each individually. There is no way to ensure the machines are consistent in the files and configurations for each game.
+* If you want to try different versions of a game, experiment with configurations, use alternative media files, it is difficult to keep track of what is what and where. With PinMan you can have multiple variants of each table, and choose to install or uninstall them as you wish.
+
 ### Features
 
 With PinMan, you have a Machine where your various virtual pinball Software is installed. And you have a Collection of Game folders, each containing the files and data (Items) for a specific version of a pinball table.&#x20;
@@ -13,6 +26,14 @@ With PinMan, you have a Machine where your various virtual pinball Software is i
 As usual, to run and play a table, all the Game files must be installed on the Machine, distributed into the specific Software directories and data stores as needed. But now, with PinMan, you can more easily automate this process. All the stuff associated with a specific table is kept in one place, its Game folder. Those can then be Installed onto the Machine Software with a single command.
 
 Likewise, you will continue to use the existing vpin tools to configure your setup, including screen layouts, PinUP media, game settings, and so on. Then, with PinMan you can use a single command to Collect all the files and settings that may have changed for a given table back into its Collection Game folder.
+
+
+
+*
+
+PinMan attempts to help solve the following problems:
+
+*
 
 
 
@@ -34,13 +55,13 @@ On the right is a Collection of Games. Each Game folder contains the files and d
 
 * MACHINE - a virtual pinball system where you play your game tables. Can be a physical pinball cabinet, or a Windows desktop. Machines are identified by a unique name and a root folder or network identifier. A Machine is configured with a list of its installed software. PinMan allows you to manage more than one Machine for your Collection.
 * SOFTWARE - a software project used on a virtual pinball machine and required to play a pinball table. A machine will have multiple software installed. We're only concerned with software that has table-specific data. Each software project is configured with a list of item types it manages.
-* ITEM TYPE - a table-specific data item managed by Software on a Machine. The are many different item types, including files, ini data, xml data, registry data, SQLite database records, whole directories and more. Parameters of each ItemType are defined in the config file.
-* CONFIG FILE - the config file defines the Machines, Runners, Software, and ItemTypes managed by PinMan, and other settings. A default config file (pinman.config.yaml) comes built-in to PinMan that covers many common virtual pinball installations (including one using BallerInstaller). As a YAML format text file, it is easily edited and updated to suit your needs.
-* RUNNER - a list of Software required by a game table to run on a machine. For example, you may have a Runner named "VisualPinball" that includes Visual Pinball, PinUPSystem, and PinballY, and a separate Runner "FuturePinball" that include Future Pinball software instead.
+* ITEM TYPE - a table-specific data item managed by Software on a Machine. There are many different item types, including files, INI data, XMLdata, Windows registry data, SQLite database records, whole directories and more. Parameters of each ItemType are defined in the Config file.
+* CONFIG FILE - the config file defines the Machines, Runners, Software, and ItemTypes managed by PinMan, and other settings. A default Config file (pinman.config.yaml) comes built-in to PinMan that covers many common virtual pinball installations, including that from BallerInstaller. As a YAML format text file, it is easily edited and updated to suit your needs.
+* RUNNER - a list of Software required by a game to run on a machine. For example, you may have a Runner named "VisualPinball" that includes Visual Pinball, PinUPSystem, and PinballY, and a separate Runner "FuturePinball" that include Future Pinball software instead.
 * COLLECTION - a directory containing your Game folders.&#x20;
 * GAME - a sub-directory under a Collection that contains the files and other data Items required to configure and play a game. Each Game folder must contain a Manifest file that identifies the Items for the paritcular game.
-* ITEM - a piece of data required by vpin Software for a specific table. For VisualPinball, Items include the .vpx and maybe .directb2s and rom.zip files. PinMan can also collect and install table-specific data, for instance, from the DmdDevice.ini, B2STableSettings.xml, and PUPDatabase.db files saved in the Game folder.&#x20;
-* MANIFEST FILE - each Game folder has a Manifest file that defines properties of the game needed to Collect from and Install to a machine. It is a YAML-format text file named game.manifest.yaml. The Manifest defines which Runner the game uses, the Base file name (e.g. "Twilight Zone (Bally 1993)"), and other files and data Items that are part of the game (e.g the ROM name " tz\_94ch"). PinMan provides tools to help automate building and updating the Manifest file, although it can also be edited directly with a text editor.&#x20;
+* ITEM - a piece of data required by virtual pinball Software for a specific table. For example, for a VisualPinball game, Items include the .vpx file and maybe .directb2s and rom.zip files. PinMan can also collect and install table-specific data, for instance, from the DmdDevice.ini, B2STableSettings.xml, and PUPDatabase.db files. All of the data is saved in the Game's folder.&#x20;
+* MANIFEST FILE - each Game folder has a Manifest file that defines properties of the game needed to Collect from and Install to a Machine. It is a YAML-format text file named game.manifest.yaml. The Manifest defines which Runner the game uses, the Base file name (e.g. "Twilight Zone (Bally 1993)"), and other files and data Items that are part of the game (e.g the ROM name " tz\_94ch"). PinMan provides tools to help automate building and updating the Manifest file, although it can also be edited directly with a text editor.&#x20;
 
 This architecture help make PinMan extremely flexible and adaptable for managing your virtual pinball data.&#x20;
 
