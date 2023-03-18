@@ -6,20 +6,7 @@ description: Overview of the basic design and terminology of PinMan
 
 Virtual pinball software, as awesome as it is, is actually an assembly of multiple separate software projects cobbled together over many years. One flaw of this ad hoc architecture, in my opinion, is that your data files (pinball tables, table-specific configurations, media, etc.) reside in the same directories as the code that runs them. _Imagine you had to keep all your Word docs in the same folder as the Microsoft Office installation files?_ PinMan is an attempt to solve this problem by letting you maintain a collection of pinball games separate from the machine and software that runs them.
 
-### Problems and Solutions
-
-Some of the problems and complexity of virtual pinball systems that PinMan hopes to address include:
-
-* &#x20;It is common practice to keep application software and user data separate for better organization and accessibility. Virtual pinball generally violates this principle by requiring your game files live in the same directories as the installed software. With PinMan, your games are stored in folders separate from the virtual pinball software.
-* In virtual pinball, there are many downloads and files per game table, with lots of variation in file types, names, purposes, packaging (e.g. zip. rar), and versions. Keeping track and managing all the files associated with a specific game is difficult. With PinMan, you can first add all the download files for a game in a single Game folder, and then install them to a Machine in one step.&#x20;
-* There are various pinball emulators, media players and other associated software, each with complex setups and unique folder structures that you need to remember and properly care for. With PinMan, your software setup is defined a Config file, that is used to install your games automatically.&#x20;
-* Installing new games can be tedious and error prone. Yet the process is basically the same and repetitive for each game. PinMan knows which files go where, and new games can be installed with a single command. &#x20;
-* Existing setups tend to be "brittle", that is, subject to unexpected breakage and problems. PinMan&#x20;
-* Rebuilding a virtual pinball machine after a disk crash or major upgrade requires having a full system backup, not all data may have been preserved (e.g Windows registry), and more likely requires hours of restoration work. Also, it is nearly impossible to partially restore some but not all games to a machine.
-* Installing the same games to multiple machines requires setting up each individually. There is no way to ensure the machines are consistent in the files and configurations for each game.
-* If you want to try different versions of a game, experiment with configurations, use alternative media files, it is difficult to keep track of what is what and where. With PinMan you can have multiple variants of each table, and choose to install or uninstall them as you wish.
-
-### Features
+### Key Features: Collect and Install
 
 With PinMan, you have a Machine where your various virtual pinball Software is installed. And you have a Collection of Game folders, each containing the files and data (Items) for a specific version of a pinball table.&#x20;
 
@@ -27,17 +14,20 @@ As usual, to run and play a table, all the Game files must be installed on the M
 
 Likewise, you will continue to use the existing vpin tools to configure your setup, including screen layouts, PinUP media, game settings, and so on. Then, with PinMan you can use a single command to Collect all the files and settings that may have changed for a given table back into its Collection Game folder.
 
-
-
-*
-
-PinMan attempts to help solve the following problems:
-
-*
-
-
-
 <figure><img src=".gitbook/assets/collect-install.png" alt=""><figcaption><p>PinMan Collect and Install Commands</p></figcaption></figure>
+
+### Problems and Solutions
+
+Some of the problems and complexity of virtual pinball systems that PinMan hopes to address include:
+
+* SEPARATION OF USER DATA. It is common practice to keep application software and user data separate for better organization and accessibility. Virtual pinball generally violates this principle by requiring your game files live in the same directories as the installed software. With PinMan, your games are stored in folders separate from the virtual pinball software.
+* MANY FILES PER GAME. In virtual pinball, there are many downloads and files per game table, with lots of variation in file types, names, purposes, packaging (e.g. zip. rar), and versions. Keeping track and managing all the files associated with a specific game is difficult. With PinMan, you can first add all the download files for a game to a single Game folder, and then install them to a Machine in one step.&#x20;
+* MULTIPLE SOFTWARES. There are various pinball emulators, media players and other associated software, each with complex setups and unique folder structures that you need to remember and properly care for. With PinMan, your software setup is defined a Config file that knows all this, so you don't have to.&#x20;
+* GAME INSTALLATION. Installing new games can be tedious and error prone. Yet the process is basically the same and repetitive for each game. PinMan knows which files go where, and new games can be installed with a single command. &#x20;
+* GAME VARIATIONS. If you want to try different versions of a game, experiment with configurations, script changes, or try alternative media files, it is difficult to keep track of what-is-what and what-is-where. With PinMan you can have multiple variants of each table and choose to install or uninstall them as you wish.
+* MULTIPLE MACHINES. Installing the same games to multiple machines requires setting up each individually. There is no way to ensure the machines are consistent in the files and configurations for each game. With PinMan, you can install a given Game to multiple machines.
+* TROUBLESHOOTING. Existing virtual pinball setups tend to be "brittle", that is, subject to unexpected breakage and problems. PinMan lets you collect all the files and data for a given game into its own Game folder. That can help with troubleshooting by comparing changes in a game's configuration on a machine against a last known working version saved in its Game folder.
+* SYSTEM RECOVERY. Rebuilding a virtual pinball machine after a disk crash or major upgrade requires having a full system backup, not all data may have been preserved (e.g Windows registry), and more likely requires hours of restoration work. Also, it is nearly impossible to partially restore some but not all games to a machine. Because PinMan maintains each game and all its data in its own folder, you can more methodically restore a system if necessary.
 
 ### Architecture
 
