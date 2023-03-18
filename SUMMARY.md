@@ -22,8 +22,14 @@
 
 ## User Guides
 
-* [Usage Scenarios](user-guides/usage-scenarios.md)
-* [Collection Folder Organization](user-guides/collection-folder-organization.md)
+* [Usage Scenarios](user-guides/usage-scenarios/README.md)
+  * [Table download and install](user-guides/usage-scenarios/table-download-and-install.md)
+  * [Backup a table](user-guides/usage-scenarios/backup-a-table.md)
+  * [Multiple machines](user-guides/usage-scenarios/multiple-machines.md)
+  * [Table maintenance](user-guides/usage-scenarios/table-maintenance.md)
+  * [Table versions](user-guides/usage-scenarios/table-versions.md)
+  * [Table variants](user-guides/usage-scenarios/table-variants.md)
+* [Game Folders](user-guides/game-folders.md)
 * [Troubleshooting](user-guides/troubleshooting.md)
 
 ## Licensing

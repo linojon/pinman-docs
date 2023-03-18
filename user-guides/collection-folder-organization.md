@@ -1,2 +1,0 @@
-# Collection Folder Organization
-
