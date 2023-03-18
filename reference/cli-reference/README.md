@@ -2,7 +2,7 @@
 
 Dive into the specifics of each API endpoint by checking out our complete documentation.
 
-## Pets
+## Init
 
 All the methods associated with `CRUD`ing some pets. Which isn't as weird as it sounds:
 
@@ -10,7 +10,7 @@ All the methods associated with `CRUD`ing some pets. Which isn't as weird as it 
 [init.md](init.md)
 {% endcontent-ref %}
 
-## Users
+## Config
 
 Everything related to users:
 

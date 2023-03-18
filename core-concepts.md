@@ -16,15 +16,7 @@ Likewise, you will continue to use your existing virtual pinball software tools 
 
 <figure><img src=".gitbook/assets/collect-install.png" alt=""><figcaption><p>PinMan Collect and Install Commands</p></figcaption></figure>
 
-To learn more about the Collect and Install commands, and many other features, see the CLI Reference pages and User Guides
-
-{% content-ref url="reference/cli-reference/" %}
-[cli-reference](reference/cli-reference/)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
+To learn more about the Collect and Install commands, and many other features, see the [CLI Reference](reference/cli-reference/) pages and [User Guides](broken-reference).
 
 ### Problems and Solutions
 
