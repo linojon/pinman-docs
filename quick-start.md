@@ -10,32 +10,53 @@ TBD
 
 TBD
 
+
+
 ## Initialize PinMan -"init"
 
-In a terminal window, run the following command
+After installation, open a Terminal window and initialize the PinMan configuration by running the following command:
 
 ```
 pinman init
 ```
 
-You'll be prompted to provide details about your system. For example, suppose you originally installed your virtual pinball software using the [Baller Installer](https://www.nailbuster.com/wikipinup/doku.php?id=baller\_installer), onto your C: drive (_C:\vPinball_). And you plan to keep your pinball tables collection in the folder _D:\vpinCollection_:
+You'll be prompted to provide details about your system. For example, suppose you originally installed your virtual pinball software using the [Baller Installer](https://www.nailbuster.com/wikipinup/doku.php?id=baller\_installer) onto your C: drive (_C:\vPinball_). and you plan to keep your pinball tables collection in the folder _D:\vpinCollection, then you might answer the prompts as follows_:
 
 ```shell-session
 Define Machine:
 Machine name: MyPinball
 Based on a template?
-> Baller
-> Custom
+>> Baller
+>  [Add]
 Machine root directory: C:\vPinball
+Add a software to this machine? N
 Add another machine? N
+
 Define Collection:
 Collection name: vpinCollection
 Collection root directory: D:\vpinCollection
 Add another collection? N
 
 PinMan default config file is located at: %APPDATA%\PinMan\pinman.config.yaml
+You can modify this file using the "pinman config" coommand, 
+or edit it in a text editor by running "pinman config --edit"
 Done.
 ```
+
+If you have additional software packages on the machine, such as an alternative UI (like [PinballX ](https://www.pinballx.com/)or [PinballY](http://mjrnet.org/pinscape/PinballY.php)), [Direct Output Framework (DOF)](http://mjrnet.org/pinscape/dll-updates.html#GranderUnifider), and so on, please add these when prompted. For example,
+
+```
+Add a software to this machine? Y
+>> Direct Output Framework (DOF)
+>  PinballX
+>  PinballY
+>  PinVol
+>  [Add]
+Direct Output Framework (DOF) root directory: D:\DirectOutput
+Add a software to this machine? N
+```
+
+For more information see the [init command](reference/cli-reference/init.md) documentation.
 
 ## Build a game folder - "build"
 
