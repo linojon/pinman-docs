@@ -20,8 +20,9 @@ After installation, open a Terminal window and initialize the PinMan configurati
 pinman init
 ```
 
-You'll be prompted to provide details about your system. For example, suppose you originally installed your virtual pinball software using the [Baller Installer](https://www.nailbuster.com/wikipinup/doku.php?id=baller\_installer) onto your C: drive (_C:\vPinball_). and you plan to keep your pinball tables collection in the folder _D:\vpinCollection,_ then you might answer the prompts as shown in the following session:
+You'll be prompted to provide details about your system. For example, suppose you originally installed your virtual pinball software using the [Baller Installer](https://www.nailbuster.com/wikipinup/doku.php?id=baller\_installer) onto your C: drive (_C:\vPinball_). and you plan to keep your pinball tables collection in the folder _D:\vpinCollection,_ then you might answer the prompts as shown in the following session, beginning with defining the virtual pinball Machine where you play your gam tables::
 
+{% code overflow="wrap" %}
 ```shell-session
 Machines: a virtual pinball system where you play your game tables
 Here is your list of Machines:
@@ -50,7 +51,27 @@ Here is your list of Machines:
 >  MyPinball
 >  [Add]
 >  OK? Y
+```
+{% endcode %}
 
+First, you're asked to define one (or more) Machines with a name, root location, and list of software installed on that machine. The most common virtual pinball software packages are pre-configured for you to choose from a list, including the standard Baller Installation. But you can change them or add more.&#x20;
+
+If you have additional software packages on the machine, such as an alternative UI (like [PinballX ](https://www.pinballx.com/)or [PinballY](http://mjrnet.org/pinscape/PinballY.php)), [Direct Output Framework (DOF)](http://mjrnet.org/pinscape/dll-updates.html#GranderUnifider), and so on, please add these when prompted. For example,
+
+```
+Add a software to this machine
+>> Direct Output Framework (DOF)
+>  PinballX
+>  PinballY
+>  PinVol
+>  [Add]
+Direct Output Framework (DOF) root directory: D:\DirectOutput
+Add a software to this machine? N
+```
+
+Next, you're asked to define one or more Runners that's simply a list of software names required to run each kind if game you play. Then you're asked to define one (or more) Collections by name and location.
+
+```
 Runners: set of software needed to run each kind of game you will be playing.
 Here is your list of Runners: 
 (please double check the software list on each runner).
@@ -76,23 +97,6 @@ Done.
 PinMan default config file is located at: %APPDATA%\PinMan\pinman.config.yaml
 You can modify this file using the "pinman config" coommand, 
 or edit it in a text editor by running "pinman config --edit"
-```
-
-First, you're asked to define one (or more) Machines with a name, root location, and list of software installed on that machine. The most common virtual pinball software packages are pre-configured for you to choose from a list, including the standard Baller Installation. But you can change them or add more.&#x20;
-
-Next, you're asked to define one or more Runners that's simply a list of software names required to run each kind if game you play. Then you're asked to define one (or more) Collections by name and location.
-
-If you have additional software packages on the machine, such as an alternative UI (like [PinballX ](https://www.pinballx.com/)or [PinballY](http://mjrnet.org/pinscape/PinballY.php)), [Direct Output Framework (DOF)](http://mjrnet.org/pinscape/dll-updates.html#GranderUnifider), and so on, please add these when prompted. For example,
-
-```
-Add a software to this machine? Y
->> Direct Output Framework (DOF)
->  PinballX
->  PinballY
->  PinVol
->  [Add]
-Direct Output Framework (DOF) root directory: D:\DirectOutput
-Add a software to this machine? N
 ```
 
 For more information see the [init command](reference/cli-reference/init.md) documentation.
