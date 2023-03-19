@@ -12,9 +12,9 @@ Welcome to PinMan! Here you'll find all the documentation you need to get up and
 
 PinMan lets you maintain your collection of pinball games separate from the software that runs them.
 
-Virtual pinball software, as awesome as it is, is actually an assembly of multiple separate software projects cobbled together over many years. One flaw of this ad hoc architecture, in my opinion, is that your data files (pinball tables, table-specific configurations, media, etc.) reside in the same directories as the code that runs them. _Imagine you had to keep all your Word docs in the same folder as the Microsoft Office installation files?_ PinMan is an attempt to solve this problem by letting you maintain a collection of pinball games separate from the machine and software that runs them.
+Virtual pinball software, as awesome as it is, is actually an assembly of multiple separate software projects cobbled together over many years. One flaw of this ad hoc architecture, in my opinion, is that your data files (pinball tables, table-specific configurations, media, etc.) reside in the same directories as the code that runs them. It is common practice to keep application software and user data separate for better organization and accessibility. _Imagine you had to keep all your Word docs in the same folder as the Microsoft Office installation files?_ PinMan is an attempt to solve this problem by letting you maintain a collection of pinball games separate from the software that runs them.
 
-Using PinMan, you can more easily manage all your virtual pinball tables, maintain different versions, perform backups and restores, distribute games to multiple machines (cabinets and desktops), and more.
+Using PinMan, you can more easily manage all your virtual pinball tables, maintain different versions, perform backups and restores, distribute games to multiple pinball cabinets and desktops), and more.
 
 Currently, PinMan is run as a command-line interface (CLI) from a terminal window. A desktop graphical interface (GUI) is planned.
 
@@ -40,9 +40,9 @@ Dive a little deeper and start exploring our API reference to get an idea of eve
 [cli-reference](reference/cli-reference/)
 {% endcontent-ref %}
 
-## Want to learn more?&#x20;
+## Want to solve a specific problem?&#x20;
 
-Discover details of the various ways you can use PinMan, organize your collections, and find troubleshooting tips.
+Discover details of the various ways you can use PinMan to install, backup, manage, maintain or upgrade your games, organize your collections, and find troubleshooting tips in the User Guides.
 
 {% content-ref url="broken-reference" %}
 [Broken link](broken-reference)

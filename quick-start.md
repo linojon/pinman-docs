@@ -1,128 +1,79 @@
+---
+description: How to install and setup PinMan
+---
+
 # Quick Start
 
-{% hint style="info" %}
-**Good to know:** A quick start guide can be good to help folks get up and running with your API in a few steps. Some people prefer diving in with the basics rather than meticulously reading every page of documentation!
-{% endhint %}
+## Download the installer
 
-## Get your API keys
+TBD
 
-Your API requests are authenticated using API keys. Any request that doesn't include an API key will return an error.
+## Install the program
 
-You can generate an API key from your Dashboard at any time.
+TBD
 
-## Install the library
+## Initialize PinMan -"init"
 
-The best way to interact with our API is to use one of our official libraries:
+In a terminal window, run the following command
 
-{% tabs %}
-{% tab title="Node" %}
 ```
-# Install via NPM
-npm install --save my-api
+pinman init
 ```
-{% endtab %}
 
-{% tab title="Python" %}
+You'll be prompted to provide details about your system. For example,
+
 ```
-# Install via pip
-pip install --upgrade myapi
 ```
-{% endtab %}
-{% endtabs %}
 
-{% hint style="info" %}
-**Good to know:** Using tabs to separate out different languages is a great way to present technical examples or code documentation without cramming your docs with extra sections or pages per language.
-{% endhint %}
+## Build a game folder - "build"
 
-## Make your first request
+Let's create your first game folder. Run the following command, replacing \<gamename> with the name of the Game folder you want to create.
 
-To make your first request, send an authenticated request to the pets endpoint. This will create a `pet`, which is nice.
-
-{% swagger baseUrl="https://api.myapi.com/v1" method="post" path="/pet" summary="Create pet." %}
-{% swagger-description %}
-Creates a new pet.
-{% endswagger-description %}
-
-{% swagger-parameter in="body" name="name" required="true" type="string" %}
-The name of the pet
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="owner_id" required="false" type="string" %}
-The 
-
-`id`
-
- of the user who owns the pet
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="species" required="false" type="string" %}
-The species of the pet
-{% endswagger-parameter %}
-
-{% swagger-parameter in="body" name="breed" required="false" type="string" %}
-The breed of the pet
-{% endswagger-parameter %}
-
-{% swagger-response status="200" description="Pet successfully created" %}
-```javascript
-{
-    "name"="Wilson",
-    "owner": {
-        "id": "sha7891bikojbkreuy",
-        "name": "Samuel Passet",
-    "species": "Dog",}
-    "breed": "Golden Retriever",
-}
 ```
-{% endswagger-response %}
-
-{% swagger-response status="401" description="Permission denied" %}
-
-{% endswagger-response %}
-{% endswagger %}
+pinman build <ganename>
+```
 
 {% hint style="info" %}
-**Good to know:** You can use the API Method block to fully document an API method. You can also sync your API blocks with an OpenAPI file or URL to auto-populate them.
+The game name here is just a folder name, it does not affect how the table is displayed in your virtual pinball software.&#x20;
 {% endhint %}
 
-Take a look at how you might call this method using our official libraries, or via `curl`:
+For example, suppose you have a Twilight Zone game, you could run
 
-{% tabs %}
-{% tab title="curl" %}
 ```
-curl https://api.myapi.com/v1/pet  
-    -u YOUR_API_KEY:  
-    -d name='Wilson'  
-    -d species='dog'  
-    -d owner_id='sha7891bikojbkreuy'  
+pinman build TwilightZone
 ```
-{% endtab %}
 
-{% tab title="Node" %}
-```javascript
-// require the myapi module and set it up with your API key
-const myapi = require('myapi')(YOUR_API_KEY);
+You'll be prompted to answer questions about the game files, such as:
 
-const newPet = away myapi.pet.create({
-    name: 'Wilson',
-    owner_id: 'sha7891bikojbkreuy',
-    species: 'Dog',
-    breed: 'Golden Retriever',
-})
 ```
-{% endtab %}
-
-{% tab title="Python" %}
-```python
-// Set your API key before making the request
-myapi.api_key = YOUR_API_KEY
-
-myapi.Pet.create(
-    name='Wilson',
-    owner_id='sha7891bikojbkreuy',
-    species='Dog',
-    breed='Golden Retriever',
-)
 ```
-{% endtab %}
-{% endtabs %}
+
+{% hint style="info" %}
+If your game name contains spaces or special characters, surround it quotes, such as&#x20;
+
+pinman build "Twilight Zone"
+{% endhint %}
+
+## Collect the game files for an installed table - "collect"
+
+Suppose you have already installed a game in your virtual pinball software before using PinMan. You can now collect those files into the Game folder with the collect command. For example,
+
+```
+pinman collect TwilightZone
+```
+
+This will find all the files and data for that game and save copies in the Game folder within your Collection (for example, D:\vpinCollection\TwilightZone\\). The command will output its progress, such as,
+
+```
+```
+
+## Next Steps
+
+To see how to install a new pinball table from downloaded files, see the [User Guide - First time download and install a VPX table and Popper](user-guides/usage-scenarios/first-time-download-and-install-a-vpx-table-and-popper-media.md) media tutorial.&#x20;
+
+To see how to run commands without interactive prompts, giving the parameters on the command line, see the [CLI Reference](reference/cli-reference/).
+
+To customize the PinMan configuration for your system and preferences, see the [Config command](reference/cli-reference/config.md) and/or the [PinMan Config File](reference/pinman-config-file.md) documentation.&#x20;
+
+
+
