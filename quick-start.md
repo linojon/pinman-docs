@@ -4,11 +4,9 @@ description: How to install and setup PinMan
 
 # Quick Start
 
-## Download the installer
+## Download and run the installer
 
 TBD
-
-## Install the program
 
 TBD
 
