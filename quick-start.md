@@ -60,7 +60,7 @@ As shown, we are adding a machine giving it the name "MyPinball", its root locat
 At this time, to add Software definitions to the configuration you must edit the config file directly using a text editor. See the [PinMan Config File](reference/pinman-config-file.md) documentation for details or contact us for assistance. This will be added to the CLI interactions in the future.
 {% endhint %}
 
-Next, you're asked to define one or more Runners that's simply a list of software names required to run each kind if game you play. Then you're asked to define one (or more) Collections by name and location.
+Next, you're asked to define one or more Runners. A Runner is simply a list of software names required to run each kind if game you play.&#x20;
 
 ```
 Runners: set of software needed to run each kind of game you will be playing.
@@ -71,7 +71,11 @@ Here is your list of Runners:
 >  fp
 >  [Add]
 >  OK? Y
+```
 
+Lastly, you're asked to define one (or more) Collections by name and location.
+
+```
 Collections: a directory containing your Game folders
 Here is your list of collections
 >> [Add]
