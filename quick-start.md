@@ -65,9 +65,9 @@ This will find all the files and data for that game and save copies in the Game 
 
 ## Next Steps
 
-To see how to install a new pinball table from downloaded files, see the [User Guide - First time download and install a VPX table and Popper](user-guides/usage-scenarios/first-time-download-and-install-a-vpx-table-and-popper-media.md) media tutorial.&#x20;
+To install a new pinball table from downloaded files, see the [User Guide - First time download and install a VPX table and Popper](user-guides/usage-scenarios/first-time-download-and-install-a-vpx-table-and-popper-media.md) media tutorial.&#x20;
 
-To see how to run commands without interactive prompts, giving the parameters on the command line, see the [CLI Reference](reference/cli-reference/).
+To run commands without interactive prompts, giving the parameters on the command line, see the [CLI Reference](reference/cli-reference/).
 
 To customize the PinMan configuration for your system and preferences, see the [Config command](reference/cli-reference/config.md) and/or the [PinMan Config File](reference/pinman-config-file.md) documentation.&#x20;
 
