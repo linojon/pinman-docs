@@ -54,20 +54,11 @@ Here is your list of Machines:
 ```
 {% endcode %}
 
-First, you're asked to define one (or more) Machines with a name, root location, and list of software installed on that machine. The most common virtual pinball software packages are pre-configured for you to choose from a list, including the standard Baller Installation. But you can change them or add more.&#x20;
+As shown, we are adding a machine giving it the name "MyPinball", its root location, and list of software installed on that machine. The most common virtual pinball software packages are pre-configured for you to choose from a list, including the standard Baller Installation, alternative user interfaces (like [PinballX ](https://www.pinballx.com/)or [PinballY](http://mjrnet.org/pinscape/PinballY.php)), the [Direct Output Framework (DOF)](http://mjrnet.org/pinscape/dll-updates.html#GranderUnifider), and so on. You can change them or add more.&#x20;
 
-If you have additional software packages on the machine, such as an alternative UI (like [PinballX ](https://www.pinballx.com/)or [PinballY](http://mjrnet.org/pinscape/PinballY.php)), [Direct Output Framework (DOF)](http://mjrnet.org/pinscape/dll-updates.html#GranderUnifider), and so on, please add these when prompted. For example,
-
-```
-Add a software to this machine
->> Direct Output Framework (DOF)
->  PinballX
->  PinballY
->  PinVol
->  [Add]
-Direct Output Framework (DOF) root directory: D:\DirectOutput
-Add a software to this machine? N
-```
+{% hint style="info" %}
+At this time, to add Software definitions to the configuration you must edit the config file directly using a text editor. See the [PinMan Config File](reference/pinman-config-file.md) documentation for details or contact us for assistance. This will be added to the CLI interactions in the future.
+{% endhint %}
 
 Next, you're asked to define one or more Runners that's simply a list of software names required to run each kind if game you play. Then you're asked to define one (or more) Collections by name and location.
 
