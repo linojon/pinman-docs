@@ -23,25 +23,45 @@ pinman init
 You'll be prompted to provide details about your system. For example, suppose you originally installed your virtual pinball software using the [Baller Installer](https://www.nailbuster.com/wikipinup/doku.php?id=baller\_installer) onto your C: drive (_C:\vPinball_). and you plan to keep your pinball tables collection in the folder _D:\vpinCollection, then you might answer the prompts as follows_:
 
 ```shell-session
-Define Machine:
+Define Machines:
 Machine name: MyPinball
 Based on a template?
 >> Baller
 >  [Add]
-Machine root directory: C:\vPinball
-Add a software to this machine? N
+Machine root location: C:\vPinball
+Software on machine MyPinball:
+>  visualpinball: C:\vPinball\VisualPinball
+>  vinmame: C:\vPinball\VisualPinball\VPinMAME
+>  futurepinball: C:\vPinball\FuturePinball
+>  pinupsystem: C:\vPinball\PinUPSystem
+>  [Add]
+>  OK? Y
 Add another machine? N
 
-Define Collection:
-Collection name: vpinCollection
-Collection root directory: D:\vpinCollection
-Add another collection? N
+Define Runners:
+>  vpx-em
+>  vpx-ss
+>  fp
+>  [Add]
+>  OK? Y
 
+Define Collections:
+Collection name: vpinCollection
+Collection root location: D:\vpinCollection
+Collections:
+>  vpinCollection: D:\vpinCollection
+> [Add]
+> OK? Y
+
+Done.
 PinMan default config file is located at: %APPDATA%\PinMan\pinman.config.yaml
 You can modify this file using the "pinman config" coommand, 
 or edit it in a text editor by running "pinman config --edit"
-Done.
 ```
+
+First, you're asked to define one (or more) Machines with a name, root location, and list of software installed on that machine. Most common software packages are already configured by default, including the standard Baller Installation installation, but you can change them or add more.&#x20;
+
+Next, you're asked to define one or more Runners that's simply a list of software names required to run each kind if game you play. Then you're asked to define one (or more) Collections by name and location.
 
 If you have additional software packages on the machine, such as an alternative UI (like [PinballX ](https://www.pinballx.com/)or [PinballY](http://mjrnet.org/pinscape/PinballY.php)), [Direct Output Framework (DOF)](http://mjrnet.org/pinscape/dll-updates.html#GranderUnifider), and so on, please add these when prompted. For example,
 
