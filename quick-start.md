@@ -20,8 +20,21 @@ pinman init
 
 You'll be prompted to provide details about your system. For example, suppose you originally installed your virtual pinball software using the [Baller Installer](https://www.nailbuster.com/wikipinup/doku.php?id=baller\_installer), onto your C: drive (_C:\vPinball_). And you plan to keep your pinball tables collection in the folder _D:\vpinCollection_:
 
-```
-```
+<pre><code>Define Machine:
+Machine name: MyPinball
+Based on a template?
+<a data-footnote-ref href="#user-content-fn-1">> Baller</a>
+> Custom
+Machine root directory: C:\vPinball
+Add another machine? N
+Define Collection:
+Collection name: vpinCollection
+Collection root directory: D:\vpinCollection
+Add another collection? N
+
+PinMan default config file is located at: %APPDATA%\PinMan\pinman.config.yaml
+Done.
+</code></pre>
 
 ## Build a game folder - "build"
 
@@ -73,3 +86,6 @@ To customize the PinMan configuration for your system and preferences, see the [
 
 
 
+
+
+[^1]: 
