@@ -23,29 +23,37 @@ pinman init
 You'll be prompted to provide details about your system. For example, suppose you originally installed your virtual pinball software using the [Baller Installer](https://www.nailbuster.com/wikipinup/doku.php?id=baller\_installer) onto your C: drive (_C:\vPinball_). and you plan to keep your pinball tables collection in the folder _D:\vpinCollection, then you might answer the prompts as follows_:
 
 ```shell-session
-Define Machines:
+Machines:
 Machine name: MyPinball
 Based on a template?
 >> Baller
->  [Add]
+>  No template
 Machine root location: C:\vPinball
 Software on machine MyPinball:
->  visualpinball: C:\vPinball\VisualPinball
->  vinmame: C:\vPinball\VisualPinball\VPinMAME
+>  dof: n/a
 >  futurepinball: C:\vPinball\FuturePinball
 >  pinupsystem: C:\vPinball\PinUPSystem
+>  pinballX: n/a
+>  pinballY: n/a
+>  pinVol: n/a
+>  visualpinball: C:\vPinball\VisualPinball
+>  vpinmame: C:\vPinball\VisualPinball\VPinMAME
 >  [Add]
 >  OK? Y
-Add another machine? N
 
-Define Runners:
+Machines:
+>  MyPinball
+>  [Add]
+>  OK? Y
+
+Runners:
 >  vpx-em
 >  vpx-ss
 >  fp
 >  [Add]
 >  OK? Y
 
-Define Collections:
+Collections:
 Collection name: vpinCollection
 Collection root location: D:\vpinCollection
 Collections:
@@ -59,7 +67,7 @@ You can modify this file using the "pinman config" coommand,
 or edit it in a text editor by running "pinman config --edit"
 ```
 
-First, you're asked to define one (or more) Machines with a name, root location, and list of software installed on that machine. Most common software packages are already configured by default, including the standard Baller Installation installation, but you can change them or add more.&#x20;
+First, you're asked to define one (or more) Machines with a name, root location, and list of software installed on that machine. Most common virtual pinball software packages are already configured by default for you to choose from a list, including the standard Baller Installation. But you can change them or add more.&#x20;
 
 Next, you're asked to define one or more Runners that's simply a list of software names required to run each kind if game you play. Then you're asked to define one (or more) Collections by name and location.
 
