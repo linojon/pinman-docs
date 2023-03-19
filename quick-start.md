@@ -18,7 +18,7 @@ In a terminal window, run the following command
 pinman init
 ```
 
-You'll be prompted to provide details about your system. For example, suppose you originally installed your virtual pinball software using the [Baller Installer](https://www.nailbuster.com/wikipinup/doku.php?id=baller\_installer), installed onto your C: drive. And you plan to keep your pinball tables collection in the folder D:\vpinCollection:
+You'll be prompted to provide details about your system. For example, suppose you originally installed your virtual pinball software using the [Baller Installer](https://www.nailbuster.com/wikipinup/doku.php?id=baller\_installer), onto your C: drive (_C:\vPinball_). And you plan to keep your pinball tables collection in the folder _D:\vpinCollection_:
 
 ```
 ```
