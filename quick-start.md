@@ -47,9 +47,7 @@ You'll be prompted to answer questions about the game files, such as:
 ```
 
 {% hint style="info" %}
-If your game name contains spaces or special characters, surround it quotes, such as&#x20;
-
-pinman build "Twilight Zone"
+If your game name contains spaces or special characters, surround it quotes, such as "Twilight Zone"
 {% endhint %}
 
 ## Collect the game files for an installed table - "collect"
