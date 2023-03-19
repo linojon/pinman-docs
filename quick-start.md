@@ -12,7 +12,7 @@ TBD
 
 
 
-## Initialize PinMan -"init"
+## Initialize PinMan configuration -"init"
 
 After installation, open a Terminal window and initialize the PinMan configuration by running the following command:
 
