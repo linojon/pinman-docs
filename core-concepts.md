@@ -14,13 +14,13 @@ As usual, to run and play a pinball table, all the Game files must be installed 
 
 Likewise, you will continue to use your existing virtual pinball software tools to setup and run your games, including screen layouts, PinUP media, game settings, and so on. Then, with PinMan you can use a single command to **Collect** everything that may have changed for a given table, saving it back into its Game folder.
 
-<figure><img src=".gitbook/assets/collect-install.png" alt=""><figcaption><p>PinMan Collect and Install Commands</p></figcaption></figure>
+<figure><img src=".gitbook/assets/collect-install (1).png" alt=""><figcaption><p>PinMan Collect and Install Commands</p></figcaption></figure>
 
-Below is an example file folder structure of some game files installed on a machine, and the corresponding files collected into a game folder. (The file names and organization of the Game folder is configurable).
+Below is an example file folder structure of some game files installed on a machine, and the corresponding files collected into a game folder. This example is a simplification showing only a few files, but as you may know, the number of files and data for virtual pinball can be complex.
 
 <figure><img src=".gitbook/assets/folder files.png" alt=""><figcaption></figcaption></figure>
 
-&#x20;
+The arrangement and names of the files can be configured to your needs and liking, especially in the Game folder.
 
 To learn more about the Collect and Install commands, and many other features, see the [User Guides](broken-reference) and the [CLI Reference](reference/cli-reference/) pages.
 
