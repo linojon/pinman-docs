@@ -4,7 +4,7 @@ description: Virtual Pinball File Manager
 
 # PinMan
 
-<figure><img src=".gitbook/assets/asciiart-white.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/asciiart-white (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Welcome to PinMan
 
