@@ -7,6 +7,7 @@
 ## Reference
 
 * [CLI Reference](reference/cli-reference/README.md)
+  * [General CLI Usage](reference/cli-reference/general-cli-usage.md)
   * [Init](reference/cli-reference/init.md)
   * [Config](reference/cli-reference/config.md)
   * [Build](reference/cli-reference/build.md)
