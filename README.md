@@ -1,18 +1,14 @@
 ---
-description: Virtual Pinball File Manager
+description: Virtual Pinball Table File Manager
 ---
 
 # PinMan
 
 <figure><img src=".gitbook/assets/asciiart-white (1).png" alt=""><figcaption></figcaption></figure>
 
-## Welcome to PinMan
-
-Welcome to PinMan! Here you'll find all the documentation you need to get up and running with the PinMan software.
-
 ## What is PinMan?
 
-PinMan lets you maintain your collection of pinball games separate from the software that runs them.
+The PinMan virtual pinball table file manager lets you maintain your collection of pinball games separate from the software that runs them.
 
 Virtual pinball software, as awesome as it is, is actually an assembly of multiple separate software projects cobbled together over many years. One flaw of this ad hoc architecture, in my opinion, is that your data files (pinball tables, table-specific configurations, media, etc.) reside in the same directories as the code that runs them. It is common practice to keep application software and user data separate for better organization and accessibility. _Imagine you had to keep all your Word docs in the same folder as the Microsoft Office installation files?_ PinMan is an attempt to solve this problem by letting you maintain a collection of pinball games separate from the software that runs them.
 
