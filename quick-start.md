@@ -94,7 +94,7 @@ You can modify this file using the "pinman config" coommand,
 or edit it in a text editor by running "pinman config --edit"
 ```
 
-For more information see the [init command](reference/cli-reference/init.md) documentation.
+For more information see the [**init** command](reference/cli-reference/init.md) documentation.
 
 ## Build a game folder - "build"
 
@@ -105,7 +105,7 @@ pinman build <ganename>
 ```
 
 {% hint style="info" %}
-The game name here is just a folder name, it does not affect how the table is displayed in your virtual pinball software.&#x20;
+The game name here is just a folder name, it does not affect how the table is displayed in your virtual pinball software. If your game name contains spaces or special characters, surround it quotes, such as "Twilight Zone"
 {% endhint %}
 
 For example, suppose you have a Twilight Zone game, you could run
@@ -116,16 +116,27 @@ pinman build TwilightZone
 
 You'll be prompted to answer questions about the game files, such as:
 
+{% code overflow="wrap" %}
 ```
-```
+Game file name: Twilight Zone (Bally 1993).vpx
+Select a runner for this game:
+>  vpx-em
+>> vpx-ss
+>  vp
+ROM name: tz_94ch
+DMD name:
+Music name prefix:
 
-{% hint style="info" %}
-If your game name contains spaces or special characters, surround it quotes, such as "Twilight Zone"
-{% endhint %}
+Done.
+Game folder D:\vpinCollection\TwilightZone has been created, with game.manifest.yaml file.
+```
+{% endcode %}
+
+A new Game folder is created, containing only the new _game.manifest.yaml_ file. You can now add files downloaded from the Internet (using the **add** command), or **collect** files from a machine that already has this game installed.
 
 ## Collect the game files for an installed table - "collect"
 
-Suppose you have already installed a game in your virtual pinball software before using PinMan. You can now collect those files into the Game folder with the collect command. For example,
+Suppose you have already installed the Twlight Zone game in your virtual pinball machine. You can now collect those files into the Game folder we just created, with the **collect** command. For example,
 
 ```
 pinman collect TwilightZone
@@ -138,11 +149,8 @@ This will find all the files and data for that game and save copies in the Game 
 
 ## Next Steps
 
-To install a new pinball table from downloaded files, see the [User Guide - First time download and install a VPX table and Popper](examples-and-guides/downloading-and-installing-a-vpx-table-and-media.md) media tutorial.&#x20;
+To install a new pinball table from downloaded files, see the [User Guide: Downloading and installing a VPX table and media](examples-and-guides/downloading-and-installing-a-vpx-table-and-media.md) tutorial.&#x20;
 
-To run commands without interactive prompts, giving the parameters on the command line, see the [CLI Reference](reference/cli-reference/).
+To run these commands without interactive prompts, giving the parameters on the command line, see the [CLI Reference](reference/cli-reference/).
 
-To customize the PinMan configuration for your system and preferences, see the [Config command](reference/cli-reference/config.md) and/or the [PinMan Config File](reference/pinman-config-file.md) documentation.&#x20;
-
-
-
+To customize the PinMan configuration for your system and preferences, see the [Config command](reference/cli-reference/config.md), the [PinMan Config File](reference/pinman-config-file.md) documentation, and [User Guide: Customizing PinMan for your system and preferences](examples-and-guides/customizing-pinman-for-your-system-and-preferences.md).&#x20;

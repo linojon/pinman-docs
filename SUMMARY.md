@@ -11,6 +11,7 @@
   * [Init](reference/cli-reference/init.md)
   * [Config](reference/cli-reference/config.md)
   * [Build](reference/cli-reference/build.md)
+  * [Add](reference/cli-reference/add.md)
   * [Collect](reference/cli-reference/collect.md)
   * [Install](reference/cli-reference/install.md)
   * [Uninstall](reference/cli-reference/uninstall.md)
