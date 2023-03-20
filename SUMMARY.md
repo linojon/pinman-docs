@@ -18,24 +18,28 @@
   * [Archive](reference/cli-reference/archive.md)
   * [Import](reference/cli-reference/import.md)
 * [PinMan Config File](reference/pinman-config-file.md)
-* [Game Manifest File](reference/game-manifest-file.md)
+* [Game Files and Manifest](reference/game-files-and-manifest.md)
 * [Error Messages](reference/error-messages.md)
 
-## User Guides
+## Examples and Guides
 
-* [Usage Scenarios](user-guides/usage-scenarios.md)
-  * [First time download and install a VPX table and Popper media](user-guides/usage-scenarios/first-time-download-and-install-a-vpx-table-and-popper-media.md)
-  * [Backup a VPX table and associated files](user-guides/usage-scenarios/backup-a-vpx-table-and-associated-files.md)
-  * [Manage a collection of tables for multiple cabinets](user-guides/usage-scenarios/manage-a-collection-of-tables-for-multiple-cabinets.md)
-  * [Maintaining the health of your collection](user-guides/usage-scenarios/maintaining-the-health-of-your-collection.md)
-  * [Upgrading a table to a new version](user-guides/usage-scenarios/upgrading-a-table-to-a-new-version.md)
-  * [Switching between game and media configurations](user-guides/usage-scenarios/switching-between-game-and-media-configurations.md)
-* [Game Folders](user-guides/collection-folder-organization.md)
-* [Troubleshooting](user-guides/troubleshooting.md)
+* [Customizing PinMan for your system and preferences](examples-and-guides/customizing-pinman-for-your-system-and-preferences.md)
+* [Downloading and installing a VPX table and media](examples-and-guides/downloading-and-installing-a-vpx-table-and-media.md)
+* [Backing up a VPX table and associated files](examples-and-guides/backing-up-a-vpx-table-and-associated-files.md)
+* [Managing a collection of tables for multiple cabinets](examples-and-guides/managing-a-collection-of-tables-for-multiple-cabinets.md)
+* [Maintaining the health of your collection](examples-and-guides/maintaining-the-health-of-your-collection.md)
+* [Upgrading a table to a new version](examples-and-guides/upgrading-a-table-to-a-new-version.md)
+* [Experimenting with game versions and media](examples-and-guides/experimenting-with-game-versions-and-media.md)
+* [Organizing your games by theme, version or category](examples-and-guides/organizing-your-games-by-theme-version-or-category.md)
+* [Keeping machine-specific settings per game table](examples-and-guides/keeping-machine-specific-settings-per-game-table.md)
+
+## Troubleshooting
+
+* [Page 2](troubleshooting/page-2.md)
 
 ## Licensing
 
-* [Open-source License](licensing/open-source-license.md)
+* [Community License](licensing/community-license.md)
 * [Paid License](licensing/paid-license.md)
 
 ## Project

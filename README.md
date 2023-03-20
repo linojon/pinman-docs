@@ -4,6 +4,8 @@ description: Virtual Pinball File Manager
 
 # PinMan
 
+<figure><img src=".gitbook/assets/asciiart-white.png" alt=""><figcaption></figcaption></figure>
+
 ## Welcome to PinMan
 
 Welcome to PinMan! Here you'll find all the documentation you need to get up and running with the PinMan software.
