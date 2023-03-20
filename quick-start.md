@@ -20,7 +20,7 @@ After installation, open a Terminal window and initialize the PinMan configurati
 pinman init
 ```
 
-You'll be prompted to provide details about your system. For example, suppose you originally installed your virtual pinball software using the [Baller Installer](https://www.nailbuster.com/wikipinup/doku.php?id=baller\_installer) onto your C: drive (_C:\vPinball_). and you plan to keep your pinball tables collection in the folder _D:\vpinCollection,_ then you might answer the prompts as shown in the following session, beginning with defining the virtual pinball Machine where you play your gam tables::
+You'll be prompted to provide details about your system. For example, suppose you originally installed your virtual pinball software using the [Baller Installer](https://www.nailbuster.com/wikipinup/doku.php?id=baller\_installer) onto your C: drive (`C:\vPinball`). and you plan to keep your pinball tables collection in the folder `D:\vpinCollection`_,_ then you might answer the prompts as shown in the following session, beginning with defining the virtual pinball Machine where you play your gam tables::
 
 {% code overflow="wrap" %}
 ```shell-session
@@ -54,7 +54,7 @@ Here is your list of Machines:
 ```
 {% endcode %}
 
-As shown, we are adding a machine giving it the name "MyPinball", its root location, and list of software installed on that machine. The most common virtual pinball software packages are pre-configured for you to choose from a list, including the standard Baller Installation, alternative user interfaces (like [PinballX ](https://www.pinballx.com/)or [PinballY](http://mjrnet.org/pinscape/PinballY.php)), the [Direct Output Framework (DOF)](http://mjrnet.org/pinscape/dll-updates.html#GranderUnifider), and so on. You can change them or add more.&#x20;
+As shown, we are adding a machine giving it the name `MyPinball`, its root location, and list of software installed on that machine. The most common virtual pinball software packages are pre-configured for you to choose from a list, including the standard Baller Installation, alternative user interfaces (like [PinballX ](https://www.pinballx.com/)or [PinballY](http://mjrnet.org/pinscape/PinballY.php)), the [Direct Output Framework (DOF)](http://mjrnet.org/pinscape/dll-updates.html#GranderUnifider), and so on. You can change them or add more.&#x20;
 
 {% hint style="info" %}
 At this time, to add Software definitions to the configuration you must edit the config file directly using a text editor. See the [PinMan Config File](reference/pinman-config-file.md) documentation for details or contact us for assistance. This will be added to the CLI interactions in the future.
@@ -98,14 +98,14 @@ For more information see the [**init** command](reference/cli-reference/init.md)
 
 ## Create a game folder - "build"
 
-Let's create your first game folder. Run the following command, replacing \<gamename> with the name of the Game folder you want to create.
+Let's create your first game folder. Run the following command, replacing `<gamename>` with the name of the Game folder you want to create.
 
 ```
 pinman build <ganename>
 ```
 
 {% hint style="info" %}
-The game name here is just a folder name, it does not affect how the table is displayed in your virtual pinball software. If your game name contains spaces or special characters, surround it quotes, such as "Twilight Zone"
+The game name here is just a folder name, it does not affect how the table is displayed in your virtual pinball software. If your game name contains spaces or special characters, surround it quotes, such as `"Twilight Zone"`
 {% endhint %}
 
 For example, suppose you have a Twilight Zone game, you could run
@@ -132,7 +132,7 @@ Game folder D:\vpinCollection\TwilightZone has been created, with game.manifest.
 ```
 {% endcode %}
 
-A new Game folder is created, containing only the new _game.manifest.yaml_ file. You can now add files downloaded from the Internet (using the **add** command), or **collect** files from a machine that already has this game installed.
+A new Game folder is created, containing only the new `game.manifest.yaml` file. You can now add files downloaded from the Internet (using the **add** command), or **collect** files from a machine that already has this game installed.
 
 ## Collect the game files for an installed table - "collect"
 
@@ -142,7 +142,7 @@ Suppose you have already installed the Twlight Zone game in your virtual pinball
 pinman collect TwilightZone
 ```
 
-This will find all the files and data for that game and save copies in the Game folder within your Collection (for example, D:\vpinCollection\TwilightZone\\). The command will output its progress, such as,
+This will find all the files and data for that game and save copies in the Game folder within your Collection (for example, `D:\vpinCollection\TwilightZone`). The command will output its progress, such as,
 
 ```
 ```
