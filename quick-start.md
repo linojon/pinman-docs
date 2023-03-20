@@ -96,7 +96,7 @@ or edit it in a text editor by running "pinman config --edit"
 
 For more information see the [**init** command](reference/cli-reference/init.md) documentation.
 
-## Build a game folder - "build"
+## Create a game folder - "build"
 
 Let's create your first game folder. Run the following command, replacing \<gamename> with the name of the Game folder you want to create.
 
