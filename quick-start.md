@@ -122,7 +122,6 @@ Game file name: Twilight Zone (Bally 1993).vpx
 Select a runner for this game:
 >  vpx-em
 >> vpx-ss
->  vp
 ROM name: tz_94ch
 DMD name:
 Music name prefix:
@@ -132,7 +131,29 @@ Game folder D:\vpinCollection\TwilightZone has been created, with game.manifest.
 ```
 {% endcode %}
 
-A new Game folder is created, containing only the new `game.manifest.yaml` file. You can now add files downloaded from the Internet (using the **add** command), or **collect** files from a machine that already has this game installed.
+Because I'm specifying a game that has already been installed (and thus is found in the PinUPSystem database) the command knows it's a solid-state game with a ROM, thus suggests the `vpx-ss` runner and knows the ROM name.&#x20;
+
+A new Game folder is created, containing only the new `game.manifest.yaml` file.&#x20;
+
+For another example, suppose you have an electro-mechanical Big Indian game:
+
+{% code overflow="wrap" %}
+```
+$ pinman build BigIndian
+Game file name: Big Indian.vpx
+Select a runner for this game:
+>> vpx-em
+DMD name:
+Music name prefix:
+
+Done.
+Game folder D:\vpinCollection\BigIndianhas been created, with game.manifest.yaml file.
+```
+{% endcode %}
+
+In this case, the command suggests the `vpx-em` runner and does not prompt for a ROM name.
+
+You can now add files downloaded from the Internet (using the **add** command), or **collect** files from a machine that already has this game installed.
 
 ## Collect the game files for an installed table - "collect"
 
