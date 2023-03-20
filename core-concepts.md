@@ -20,7 +20,9 @@ Below is an example file folder structure of files installed on a machine, and t
 
 <figure><img src=".gitbook/assets/folder files.png" alt=""><figcaption></figcaption></figure>
 
-The arrangement and names of the files can be configured to your needs and liking, especially in the Game folder. To learn more about the **collect**, **install** and other commands, see the [CLI Reference](reference/cli-reference/) documentation. For tips and tutorials take a look at the [Examples and Guides](broken-reference) pages.
+The arrangement and names of the files can be configured to your needs and liking, especially in the Game folder. In this example, the "Twilight Zone" game folder has a _vpx_ subdirectory with the Visual Pinball files, and a separate subdirectory, _vpm_, for the VPinMAME files.
+
+To learn more about the **collect**, **install** and other commands, see the [CLI Reference](reference/cli-reference/) documentation. For tips and tutorials take a look at the [Examples and Guides](broken-reference) pages.
 
 ## Problems and Solutions
 
