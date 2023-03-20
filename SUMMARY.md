@@ -34,6 +34,7 @@
 * [Experimenting with game versions and media](examples-and-guides/experimenting-with-game-versions-and-media.md)
 * [Organizing your games by theme, version or category](examples-and-guides/organizing-your-games-by-theme-version-or-category.md)
 * [Keeping machine-specific settings per game table](examples-and-guides/keeping-machine-specific-settings-per-game-table.md)
+* [Connecting over a LAN](examples-and-guides/connecting-over-a-lan.md)
 
 ## Troubleshooting
 
