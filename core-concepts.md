@@ -43,9 +43,9 @@ Some of the problems and complexity of virtual pinball systems that PinMan hopes
 
 For all its advantages, there may be reasons to not use PinMan and just stick with the conventional way of managing your virtual pinball tables. For instance,
 
-* "If it ain't broke, don't fix it". If the way you currently do things is working for you, and you're not spending a lot of time managing your games collection, then learning new software like PinMan may just mean extra work without proportional benefits.&#x20;
-* Doubles your storage requirements. PinMan at least doubles the storage needed for your pinball files, since there's your games collection in one place, and the running copies of those files installed in the machine. Personally, I like to keep a master copy of my games collection on a separate PC, but you may not feel it's necessary or worth it.
-* Sufficient backup/restore procedures. If you've setup regular backups of your system and are OK with doing an all-or-nothing restore should it be necessary, then there may not be as much advantage to the incremental game management provided by PinMan.
+* Leave well enough alone. If the way you currently do things is working for you, and you're not spending a lot of time managing your games collection, then learning new software like PinMan may just mean extra work without proportional benefits.&#x20;
+* Doubles your storage requirements. PinMan doubles the storage needed for your pinball files, since there's your games collection in one place, and the running copies of those same files installed in the machine. Personally, I like to keep a master copy of my games collection on a separate PC, but you may not feel it's necessary or worth it.
+* Got backup/restore procedures. If you're primarily interested in PinMan for backups, and you've setup regular backups of your system and are OK with doing an all-or-nothing restore (should it be necessary), then there may not be as much advantage to the incremental game management provided by PinMan.
 
 ## Architecture
 
