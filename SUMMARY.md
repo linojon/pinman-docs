@@ -29,16 +29,16 @@
 * [Downloading and installing a VPX table and media](examples-and-guides/downloading-and-installing-a-vpx-table-and-media.md)
 * [Backing up a VPX table and associated files](examples-and-guides/backing-up-a-vpx-table-and-associated-files.md)
 * [Managing a collection of tables for multiple cabinets](examples-and-guides/managing-a-collection-of-tables-for-multiple-cabinets.md)
-* [Maintaining the health of your collection](examples-and-guides/maintaining-the-health-of-your-collection.md)
 * [Upgrading a table to a new version](examples-and-guides/upgrading-a-table-to-a-new-version.md)
-* [Experimenting with game versions and media](examples-and-guides/experimenting-with-game-versions-and-media.md)
+* [Experimenting with game versions, settings, and media](examples-and-guides/experimenting-with-game-versions-settings-and-media.md)
 * [Organizing your games by theme, version or category](examples-and-guides/organizing-your-games-by-theme-version-or-category.md)
 * [Keeping machine-specific settings per game table](examples-and-guides/keeping-machine-specific-settings-per-game-table.md)
-* [Connecting over a LAN](examples-and-guides/connecting-over-a-lan.md)
+* [Managing game installs on a network](examples-and-guides/managing-game-installs-on-a-network.md)
 
-## Troubleshooting
+## Support
 
-* [Page 2](troubleshooting/page-2.md)
+* [PinMan FAQ](support/pinman-faq.md)
+* [Reporting an issue](support/reporting-an-issue.md)
 
 ## Licensing
 

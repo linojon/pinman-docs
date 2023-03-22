@@ -1,6 +1,6 @@
 # Project Roadmap
 
-\[This is just an unofficial sketch. Actual roadmap TBD]
+\[This is an unofficial list. Actual roadmap TBD]
 
 ### Command line interface (CLI)
 
@@ -14,8 +14,7 @@
 * IPad/iPhone
 * Android
 
-### Dual License
+### Licensing
 
-* Open source
-* Paid / Subscription
+* Paid / Subscription services
 
