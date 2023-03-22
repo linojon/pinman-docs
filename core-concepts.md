@@ -24,7 +24,7 @@ The arrangement and names of the files can be configured to your needs and likin
 
 To learn more about the **collect**, **install** and other commands, see the [CLI Reference](reference/cli-reference/) documentation. For tips and tutorials take a look at the [Examples and Guides](broken-reference) pages.
 
-## Problems and Solutions
+## Why use PinMan? Problems and Solutions
 
 Some of the problems and complexity of virtual pinball systems that PinMan hopes to address include:
 
