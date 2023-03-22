@@ -24,7 +24,7 @@ Learn more by reading about the general concepts and terminology of PinMan:
 
 ## Want to jump right in?
 
-Feeling like an eager beaver? Jump in to the quick start docs and get making your first request:
+Got itchy flipper fingers? Jump in to the quick start docs to setup and try PinMan for yourself:
 
 {% content-ref url="quick-start.md" %}
 [quick-start.md](quick-start.md)
@@ -32,7 +32,7 @@ Feeling like an eager beaver? Jump in to the quick start docs and get making you
 
 ## Want to deep dive?
 
-Dive a little deeper and start exploring our API reference to get an idea of everything that's possible with the CLI:
+Dive a little deeper and start exploring our CLI (command line interface) reference to get an idea of everything that's possible with PinMan:
 
 {% content-ref url="reference/cli-reference/" %}
 [cli-reference](reference/cli-reference/)
@@ -40,7 +40,7 @@ Dive a little deeper and start exploring our API reference to get an idea of eve
 
 ## Want to solve a specific problem?&#x20;
 
-Discover details of the various ways you can use PinMan to install, backup, manage, maintain or upgrade your games, organize your collections, and find troubleshooting tips in the User Guides.
+Discover how you can use PinMan to install, backup, organize, upgrade and troubleshoot your games with specific Examples and Guides tutorials:
 
 {% content-ref url="broken-reference" %}
 [Broken link](broken-reference)

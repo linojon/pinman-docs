@@ -12,7 +12,7 @@ TBD
 
 
 
-## Initialize PinMan configuration -"init"
+## Initialize PinMan configuration: init
 
 After installation, open a Terminal window and initialize the PinMan configuration by running the following command:
 
@@ -96,7 +96,7 @@ or edit it in a text editor by running "pinman config --edit"
 
 For more information see the [**init** command](reference/cli-reference/init.md) documentation.
 
-## Create a game folder - "build"
+## Create a game folder: build
 
 Let's create your first game folder. Run the following command, replacing `<gamename>` with the name of the Game folder you want to create.
 
@@ -155,7 +155,7 @@ In this case, the command suggests the `vpx-em` runner and does not prompt for a
 
 You can now add files downloaded from the Internet (using the **add** command), or **collect** files from a machine that already has this game installed.
 
-## Collect the game files for an installed table - "collect"
+## Collect the game files for an installed table: collect
 
 Suppose you have already installed the Twlight Zone game in your virtual pinball machine. You can now collect those files into the Game folder we just created, with the **collect** command. For example,
 
