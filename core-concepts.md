@@ -18,7 +18,7 @@ Likewise, you will continue to use your existing virtual pinball software tools 
 
 Below is an example file folder structure of files installed on a machine, and the corresponding files collected into a game folder. This simplified example shows just a few of many files you'd really have for a paritcular pinball table.
 
-<figure><img src=".gitbook/assets/folder files.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/folder files (1).png" alt=""><figcaption></figcaption></figure>
 
 The arrangement and names of the files can be configured to your needs and liking, especially in the Game folder. In this example, the `Twilight Zone` game folder has a `vpx` subdirectory with the Visual Pinball files, and a separate subdirectory, `vpm`, for the VPinMAME files, including a rom file that is named with the prefix `roms.` for easy readability when perusing your files.
 
