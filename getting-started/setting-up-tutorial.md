@@ -94,7 +94,7 @@ You can modify this file using the "pinman config" coommand,
 or edit it in a text editor by running "pinman config --edit"
 ```
 
-For more information see the [**init** command](../reference/cli-reference/init.md) documentation.
+For more information see the [**init** command](broken-reference) documentation.
 
 ## Create a game folder: build
 
@@ -172,6 +172,6 @@ This will find all the files and data for that game and save copies in the Game 
 
 To install a new pinball table from downloaded files, see the [How To: Installing Games](../how-to/installing-games.md) tutorial.&#x20;
 
-To run these commands without interactive prompts, giving the parameters on the command line, see the [CLI Reference](../reference/cli-reference/).
+To run these commands without interactive prompts, giving the parameters on the command line, see the [CLI Reference](../reference/cli-reference.md).
 
-To further configure PinMan for your system, see and [How To: Configuring](../how-to/configuring.md) guide, and the [Config command](../reference/cli-reference/config.md), and [Config File](../reference/config-file.md) documentation.
+To further configure PinMan for your system, see and [How To: Configuring](../how-to/configuring.md) guide, and the [Config command](broken-reference), and [Config File](../reference/config-file.md) documentation.

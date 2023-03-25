@@ -10,19 +10,8 @@
 
 ## Reference
 
-* [CLI Reference](reference/cli-reference/README.md)
-  * [General CLI Usage](reference/cli-reference/general-cli-usage.md)
-  * [Init](reference/cli-reference/init.md)
-  * [Config](reference/cli-reference/config.md)
-  * [Build](reference/cli-reference/build.md)
-  * [Add](reference/cli-reference/add.md)
-  * [Install](reference/cli-reference/install.md)
-  * [Collect](reference/cli-reference/collect.md)
-  * [Uninstall](reference/cli-reference/uninstall.md)
-  * [Status](reference/cli-reference/status.md)
-  * [Clone](reference/cli-reference/clone.md)
-  * [Archive](reference/cli-reference/archive.md)
-  * [Import](reference/cli-reference/import.md)
+* [General CLI Usage](reference/general-cli-usage.md)
+* [CLI Reference](reference/cli-reference.md)
 * [Config File](reference/config-file.md)
 * [Game Manifest](reference/game-manifest.md)
 * [Error Messages](reference/error-messages.md)
