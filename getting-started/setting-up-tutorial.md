@@ -170,8 +170,8 @@ This will find all the files and data for that game and save copies in the Game 
 
 ## Next Steps
 
-To install a new pinball table from downloaded files, see the [User Guide: Downloading and installing a VPX table and media](../how-to/installing-games.md) tutorial.&#x20;
+To install a new pinball table from downloaded files, see the [How To: Installing Games](../how-to/installing-games.md) tutorial.&#x20;
 
 To run these commands without interactive prompts, giving the parameters on the command line, see the [CLI Reference](../reference/cli-reference/).
 
-To customize the PinMan configuration for your system and preferences, see the [Config command](../reference/cli-reference/config.md), the [PinMan Config File](../reference/config-file.md) documentation, and [User Guide: Customizing PinMan for your system and preferences](../how-to/configuring.md).&#x20;
+To further configure PinMan for your system, see and [How To: Configuring](../how-to/configuring.md) guide, and the [Config command](../reference/cli-reference/config.md), and [Config File](../reference/config-file.md) documentation.
