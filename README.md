@@ -32,8 +32,8 @@ Now, for example, suppose you want to collect all the current files, media, and 
 $ pinman build Leprechaun --table="Leprechaun King (Orbital 2020).vpx"
 $ pinman collect Leprechaun
    visualpinball
-✔  - vpx           Copied          Tables/Leprechaun King (Orbital 2020).vpx 
-✔  - ultradmd      Copied          Tables/leprechaun.UltraDMD 
+✔  - vpx           Copied          vpx/Leprechaun King (Orbital 2020).vpx 
+✔  - ultradmd      Copied          vpx/leprechaun.UltraDMD 
 ✔  Done:           2 items collected
 ```
 
@@ -42,10 +42,10 @@ In the following example, suppose we've downloaded the files we want for the Twi
 ```
 $ pinman install TwilightZone
    visualpinball
-✔  - vpx           Copied          vpx/Twilight Zone (Bally 1993).vpx 
-✔  - directb2s     Copied          vpx/Twilight Zone (Bally 1993).directb2s 
+✔  - vpx           Copied          Tables/Twilight Zone (Bally 1993).vpx 
+✔  - directb2s     Copied          Tables/Twilight Zone (Bally 1993).directb2s 
    vpinmame
-✔  - rom           Copied          vpm/tz_94ch.zip 
+✔  - rom           Copied          VPinMAME/roms/tz_94ch.zip 
 ✔  Done:           3 items installed 
 ```
 
