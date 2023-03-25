@@ -18,15 +18,11 @@ Currently, PinMan is run as a command-line interface (CLI) from a terminal windo
 
 TBD
 
-## Quickstart
+## Quick peek
 
-First you'll use the **init** command to initialize PinMan, for example, for a standard Baller-Installer system:
+After downloading and installing the PinMan program, open a Terminal window and use PinMan from the command line. You can run any PinMan command interactively, guided by question prompts. Or you can provide the options directly on the command line.&#x20;
 
-```
-$ pinman init --variant=baller --root=C:\vPinball --collection=D:\MyCollection
-```
-
-Now, for example, suppose you want to collect all the current files, media, and settings for a game already installed on your vpin machine. The following **build** and **collect** commands gather the Leprechaun King files into its own folder named "Leprechaun" in your D:\MyCollection folder:
+For example, suppose you want to collect all the current files, media, and settings for a game already installed on your vpin machine. The following **build** and **collect** commands gather the Leprechaun King files into its own folder named "Leprechaun" in your D:\MyCollection folder:
 
 ```
 $ pinman build Leprechaun --table="Leprechaun King (Orbital 2020).vpx"
@@ -37,7 +33,7 @@ $ pinman collect Leprechaun
 ✔  Done:           2 items collected
 ```
 
-In the following example, suppose we've downloaded the files we want for the Twilight Zone game into its own game folder. You can **install** the game to your vpin machine with one command:&#x20;
+In the following example, suppose we've downloaded the files we want for the Twilight Zone game into its own game folder named "TwilightZone". You can **install** the game to your vpin machine with one command:&#x20;
 
 ```
 $ pinman install TwilightZone
@@ -49,4 +45,4 @@ $ pinman install TwilightZone
 ✔  Done:           3 items installed 
 ```
 
-This just scratches the surface of how you can use PinMan.
+This just scratches the surface of how you can use PinMan, the next pages goes into the Features. Then follow the [Setting up: Tutorial ](getting-started/setting-up-tutorial.md)and review the [CLI Reference](reference/cli-reference/) for more details.
