@@ -45,4 +45,4 @@ $ pinman install TwilightZone
 ✔  Done:           3 items installed 
 ```
 
-This just scratches the surface of how you can use PinMan, the next pages goes into the Features. Then follow the [Setting up: Tutorial ](getting-started/setting-up-tutorial.md)and review the [CLI Reference](reference/cli-reference/) for more details.
+This just scratches the surface of how you can use PinMan. See the next page for [Features](getting-started/features.md). Then follow the [Setting up: Tutorial ](getting-started/setting-up-tutorial.md)and review the [CLI Reference](reference/cli-reference/) for more details.
