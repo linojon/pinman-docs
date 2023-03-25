@@ -1,8 +1,8 @@
 ---
-description: How to install and setup PinMan
+description: How to setup and use PinMan
 ---
 
-# Quick Start
+# Setting up: Tutorial
 
 ## Download and run the installer
 
@@ -17,7 +17,7 @@ TBD
 After installation, open a Terminal window and initialize the PinMan configuration by running the following command:
 
 ```
-pinman init
+$ pinman init
 ```
 
 You'll be prompted to provide details about your system. For example, suppose you originally installed your virtual pinball software using the [Baller Installer](https://www.nailbuster.com/wikipinup/doku.php?id=baller\_installer) onto your C: drive (`C:\vPinball`). and you plan to keep your pinball tables collection in the folder `D:\vpinCollection`_,_ then you might answer the prompts as shown in the following session, beginning with defining the virtual pinball Machine where you play your gam tables::
@@ -57,7 +57,7 @@ Here is your list of Machines:
 As shown, we are adding a machine giving it the name `MyPinball`, its root location, and list of software installed on that machine. The most common virtual pinball software packages are pre-configured for you to choose from a list, including the standard Baller Installation, alternative user interfaces (like [PinballX ](https://www.pinballx.com/)or [PinballY](http://mjrnet.org/pinscape/PinballY.php)), the [Direct Output Framework (DOF)](http://mjrnet.org/pinscape/dll-updates.html#GranderUnifider), and so on. You can change them or add more.&#x20;
 
 {% hint style="info" %}
-At this time, to add Software definitions to the configuration you must edit the config file directly using a text editor. See the [PinMan Config File](reference/pinman-config-file.md) documentation for details or contact us for assistance. This will be added to the CLI interactions in the future.
+At this time, to add Software definitions to the configuration you must edit the config file directly using a text editor. See the [PinMan Config File](../reference/config-file.md) documentation for details or contact us for assistance. This will be added to the CLI interactions in the future.
 {% endhint %}
 
 Next, you're asked to define one or more Runners. A Runner is simply a list of software names required to run each kind if game you play.&#x20;
@@ -94,7 +94,7 @@ You can modify this file using the "pinman config" coommand,
 or edit it in a text editor by running "pinman config --edit"
 ```
 
-For more information see the [**init** command](reference/cli-reference/init.md) documentation.
+For more information see the [**init** command](../reference/cli-reference/init.md) documentation.
 
 ## Create a game folder: build
 
@@ -170,8 +170,8 @@ This will find all the files and data for that game and save copies in the Game 
 
 ## Next Steps
 
-To install a new pinball table from downloaded files, see the [User Guide: Downloading and installing a VPX table and media](examples-and-guides/downloading-and-installing-a-vpx-table-and-media.md) tutorial.&#x20;
+To install a new pinball table from downloaded files, see the [User Guide: Downloading and installing a VPX table and media](../how-to/installing-games.md) tutorial.&#x20;
 
-To run these commands without interactive prompts, giving the parameters on the command line, see the [CLI Reference](reference/cli-reference/).
+To run these commands without interactive prompts, giving the parameters on the command line, see the [CLI Reference](../reference/cli-reference/).
 
-To customize the PinMan configuration for your system and preferences, see the [Config command](reference/cli-reference/config.md), the [PinMan Config File](reference/pinman-config-file.md) documentation, and [User Guide: Customizing PinMan for your system and preferences](examples-and-guides/customizing-pinman-for-your-system-and-preferences.md).&#x20;
+To customize the PinMan configuration for your system and preferences, see the [Config command](../reference/cli-reference/config.md), the [PinMan Config File](../reference/config-file.md) documentation, and [User Guide: Customizing PinMan for your system and preferences](../how-to/configuring.md).&#x20;

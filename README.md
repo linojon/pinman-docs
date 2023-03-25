@@ -1,47 +1,52 @@
 ---
-description: Virtual Pinball Table File Manager
+description: 'PinMan: Virtual Pinball Table File Manager'
 ---
 
-# PinMan
+# Introduction
 
 <figure><img src=".gitbook/assets/asciiart-white (1).png" alt=""><figcaption></figcaption></figure>
 
 ## What is PinMan?
 
-The PinMan virtual pinball table file manager lets you maintain your collection of pinball games separate from the software that runs them.
+PinMan is virtual pinball table tool that lets you keep your collection of pinball games, including all their files, media, and settings, separate from the software that runs them.
 
-Virtual pinball software, as awesome as it is, is actually an assembly of multiple separate software projects cobbled together over many years. One flaw of this ad hoc architecture, in my opinion, is that your data files (pinball tables, table-specific configurations, media, etc.) reside in the same directories as the code that runs them. It is common practice to keep application software and user data separate for better organization and accessibility. _Imagine you had to keep all your Word docs in the same folder as the Microsoft Office installation files?_ PinMan is an attempt to solve this problem by letting you maintain a collection of pinball games separate from the software that runs them.
-
-Using PinMan, you can more easily manage all your virtual pinball tables, maintain different versions, perform backups and restores, distribute games to multiple pinball cabinets and desktops), and more.
+Using PinMan, you can more easily install new games, maintain different versions of a table, perform backups and restores, distribute games to multiple machine, help with troubleshooting, and more.
 
 Currently, PinMan is run as a command-line interface (CLI) from a terminal window. A desktop graphical interface (GUI) is planned.
 
-Learn more by reading about the general concepts and terminology of PinMan:
+## Requirements
 
-{% content-ref url="core-concepts.md" %}
-[core-concepts.md](core-concepts.md)
-{% endcontent-ref %}
+TBD
 
-## Want to jump right in?
+## Quickstart
 
-Got itchy flipper fingers? Jump in to the quick start docs to setup and try PinMan for yourself:
+First you'll use the **init** command to initialize PinMan, for example, for a standard Baller-Installer system:
 
-{% content-ref url="quick-start.md" %}
-[quick-start.md](quick-start.md)
-{% endcontent-ref %}
+```
+$ pinman init --variant=baller --root=C:\vPinball --collection=D:\MyCollection
+```
 
-## Want to deep dive?
+Now, for example, suppose you want to collect all the current files, media, and settings for a game already installed on your vpin machine. The following **build** and **collect** commands gather the Leprechaun King files into its own folder named "Leprechaun" in your D:\MyCollection folder:
 
-Dive a little deeper and start exploring our CLI (command line interface) reference to get an idea of everything that's possible with PinMan:
+```
+$ pinman build Leprechaun --table="Leprechaun King (Orbital 2020).vpx"
+$ pinman collect Leprechaun
+   visualpinball
+✔  - vpx           Copied          Tables/Leprechaun King (Orbital 2020).vpx 
+✔  - ultradmd      Copied          Tables/leprechaun.UltraDMD 
+✔  Done:           2 items collected
+```
 
-{% content-ref url="reference/cli-reference/" %}
-[cli-reference](reference/cli-reference/)
-{% endcontent-ref %}
+In the following example, suppose we've downloaded the files we want for the Twilight Zone game into its own game folder. You can **install** the game to your vpin machine with one command:&#x20;
 
-## Want to solve a specific problem?&#x20;
+```
+$ pinman install TwilightZone
+   visualpinball
+✔  - vpx           Copied          vpx/Twilight Zone (Bally 1993).vpx 
+✔  - directb2s     Copied          vpx/Twilight Zone (Bally 1993).directb2s 
+   vpinmame
+✔  - rom           Copied          vpm/tz_94ch.zip 
+✔  Done:           3 items installed 
+```
 
-Discover how you can use PinMan to install, backup, organize, upgrade and troubleshoot your games with specific Examples and Guides tutorials:
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
+This just scratches the surface of how you can use PinMan.

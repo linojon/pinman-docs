@@ -1,8 +1,12 @@
 # Table of contents
 
-* [PinMan](README.md)
-* [Quick Start](quick-start.md)
-* [Core Concepts](core-concepts.md)
+## Getting Started
+
+* [Introduction](README.md)
+* [Features](getting-started/features.md)
+* [PinMan Definitions](getting-started/pinman-definitions.md)
+* [Setting up: Tutorial](getting-started/setting-up-tutorial.md)
+* [FAQ](getting-started/faq.md)
 
 ## Reference
 
@@ -19,32 +23,21 @@
   * [Clone](reference/cli-reference/clone.md)
   * [Archive](reference/cli-reference/archive.md)
   * [Import](reference/cli-reference/import.md)
-* [PinMan Config File](reference/pinman-config-file.md)
-* [Game Files and Manifest](reference/game-files-and-manifest.md)
+* [Config File](reference/config-file.md)
+* [Game Manifest](reference/game-manifest.md)
 * [Error Messages](reference/error-messages.md)
 
-## Examples and Guides
+## How To
 
-* [Customizing PinMan for your system and preferences](examples-and-guides/customizing-pinman-for-your-system-and-preferences.md)
-* [Downloading and installing a VPX table and media](examples-and-guides/downloading-and-installing-a-vpx-table-and-media.md)
-* [Backing up a VPX table and associated files](examples-and-guides/backing-up-a-vpx-table-and-associated-files.md)
-* [Managing a collection of tables for multiple cabinets](examples-and-guides/managing-a-collection-of-tables-for-multiple-cabinets.md)
-* [Upgrading a table to a new version](examples-and-guides/upgrading-a-table-to-a-new-version.md)
-* [Experimenting with game versions, settings, and media](examples-and-guides/experimenting-with-game-versions-settings-and-media.md)
-* [Organizing your games by theme, version or category](examples-and-guides/organizing-your-games-by-theme-version-or-category.md)
-* [Keeping machine-specific settings per game table](examples-and-guides/keeping-machine-specific-settings-per-game-table.md)
-* [Managing game installs on a network](examples-and-guides/managing-game-installs-on-a-network.md)
+* [Configuring](how-to/configuring.md)
+* [Installing games](how-to/installing-games.md)
+* [Backups](how-to/backups.md)
+* [Multiple machines](how-to/multiple-machines.md)
+* [Table versions](how-to/table-versions.md)
+* [Using a network](how-to/using-a-network.md)
 
 ## Support
 
-* [PinMan FAQ](support/pinman-faq.md)
 * [Reporting an issue](support/reporting-an-issue.md)
-
-## Licensing
-
-* [Community License](licensing/community-license.md)
-* [Paid License](licensing/paid-license.md)
-
-## Project
-
-* [Project Roadmap](project/project-roadmap.md)
+* [Licenses](support/licenses.md)
+* [Project Roadmap](support/project-roadmap.md)
